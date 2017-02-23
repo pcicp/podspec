@@ -10,45 +10,45 @@ Pod::Spec.new do |spec|
   spec.source_files  = 'extobjc/*.{h,m}'
   spec.exclude_files = 'extobjc/extobjc.h'
 
-  subspec 'EXTRuntimeExtensions' do |subspec|
-    subspec.source_files = 'extobjc/EXTRuntimeExtensions.{h,m}'
+  subspec 'EXTRuntimeExtensions' do |sub_spec|
+    sub_spec.source_files = 'extobjc/EXTRuntimeExtensions.{h,m}'
   end
-  subspec 'EXTADT' do |subspec|
-    subspec.source_files = 'extobjc/metamacros.h', 'extobjc/EXTADT.{h,m}'
-    subspec.dependency 'libextobjc/EXTRuntimeExtensions'
+  subspec 'EXTADT' do |sub_spec|
+    sub_spec.source_files = 'extobjc/metamacros.h', 'extobjc/EXTADT.{h,m}'
+    sub_spec.dependency 'libextobjc/EXTRuntimeExtensions'
   end
-  subspec 'EXTConcreteProtocol' do |subspec|
-    subspec.source_files = 'extobjc/metamacros.h', 'extobjc/EXTConcreteProtocol.{h,m}'
-    subspec.dependency 'libextobjc/EXTRuntimeExtensions'
+  subspec 'EXTConcreteProtocol' do |sub_spec|
+    sub_spec.source_files = 'extobjc/metamacros.h', 'extobjc/EXTConcreteProtocol.{h,m}'
+    sub_spec.dependency 'libextobjc/EXTRuntimeExtensions'
   end
-  subspec 'EXTCoroutine' do |subspec|
-    subspec.source_files = 'extobjc/EXTCoroutine.h'
+  subspec 'EXTCoroutine' do |sub_spec|
+    sub_spec.source_files = 'extobjc/EXTCoroutine.h'
   end
-  subspec 'EXTKeyPathCoding' do |subspec|
-    subspec.source_files = 'extobjc/metamacros.h', 'extobjc/EXTKeyPathCoding.h'
+  subspec 'EXTKeyPathCoding' do |sub_spec|
+    sub_spec.source_files = 'extobjc/metamacros.h', 'extobjc/EXTKeyPathCoding.h'
   end
-  subspec 'EXTNil' do |subspec|
-    subspec.source_files = 'extobjc/EXTNil.{h,m}'
-    subspec.dependency 'libextobjc/EXTRuntimeExtensions'
+  subspec 'EXTNil' do |sub_spec|
+    sub_spec.source_files = 'extobjc/EXTNil.{h,m}'
+    sub_spec.dependency 'libextobjc/EXTRuntimeExtensions'
   end
-  subspec 'EXTSafeCategory' do |subspec|
-    subspec.source_files = 'extobjc/metamacros.h', 'extobjc/EXTSafeCategory.{h,m}'
-    subspec.dependency 'libextobjc/EXTRuntimeExtensions'
+  subspec 'EXTSafeCategory' do |sub_spec|
+    sub_spec.source_files = 'extobjc/metamacros.h', 'extobjc/EXTSafeCategory.{h,m}'
+    sub_spec.dependency 'libextobjc/EXTRuntimeExtensions'
   end
-  subspec 'EXTScope' do |subspec|
-    subspec.source_files = 'extobjc/metamacros.h', 'extobjc/EXTScope.{h,m}'
+  subspec 'EXTScope' do |sub_spec|
+    sub_spec.source_files = 'extobjc/metamacros.h', 'extobjc/EXTScope.{h,m}'
   end
-  subspec 'EXTSelectorChecking' do |subspec|
-    subspec.source_files = 'extobjc/metamacros.h', 'extobjc/EXTSelectorChecking.{h,m}'
+  subspec 'EXTSelectorChecking' do |sub_spec|
+    sub_spec.source_files = 'extobjc/metamacros.h', 'extobjc/EXTSelectorChecking.{h,m}'
   end
-  subspec 'EXTSynthesize' do |subspec|
-    subspec.source_files = 'extobjc/metamacros.h', 'extobjc/EXTSynthesize.h'
-    subspec.dependency 'libextobjc/EXTRuntimeExtensions'
+  subspec 'EXTSynthesize' do |sub_spec|
+    sub_spec.source_files = 'extobjc/metamacros.h', 'extobjc/EXTSynthesize.h'
+    sub_spec.dependency 'libextobjc/EXTRuntimeExtensions'
   end
-  subspec 'NSInvocation+EXT' do |subspec|
-    subspec.source_files = 'extobjc/NSInvocation+EXT.{h,m}'
+  subspec 'NSInvocation+EXT' do |sub_spec|
+    sub_spec.source_files = 'extobjc/NSInvocation+EXT.{h,m}'
   end
-  subspec 'NSMethodSignature+EXT' do |subspec|
-    subspec.source_files = 'extobjc/NSMethodSignature+EXT.{h,m}'
+  subspec 'NSMethodSignature+EXT' do |sub_spec|
+    sub_spec.source_files = 'extobjc/NSMethodSignature+EXT.{h,m}'
   end
 end
