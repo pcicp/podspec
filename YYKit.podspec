@@ -26,6 +26,6 @@ Pod::Spec.new do |s|
   s.ios.vendored_frameworks = 'Vendor/WebP.framework'
 
   s.subspec 'YYTimer' do |ss|
-    ss.source_files = 'YYKit/YYKit/Utility/YYTimer.{h,m}'
+    ss.source_files = 'YYKit/Utility/YYTimer.{h,m}'
   end
 end
