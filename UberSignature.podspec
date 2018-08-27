@@ -6,6 +6,6 @@ Pod::Spec.new do |spec|
   spec.authors      = 'Uber Open Source'
   spec.summary      = 'Provides an iOS view controller allowing a user to draw their signature with their finger in a realistic style.'
   spec.source       = { :git => 'https://github.com/uber/UberSignature.git' }
-  spec.source_files = 'ObjC/UberSignature/Signature/*.{h,m}', 'ObjC/UberSignature/Signature/**/*.{h,m}'
+  spec.source_files = 'Sources/ObjC/*.{h,m}', 'Sources/ObjC/**/*.{h,m}'
   spec.ios.deployment_target = '8.0'
 end
