@@ -28,4 +28,9 @@ Pod::Spec.new do |s|
   s.subspec 'YYTimer' do |ss|
     ss.source_files = 'YYKit/Utility/YYTimer.{h,m}'
   end
+  
+  s.subspec 'YYText' do |ss|
+    ss.source_files = 'YYKit/Text/**/*.{h,m}'
+    ss.public_header_files = 'YYKit/Text/**/*.{h}'
+  end
 end
