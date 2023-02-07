@@ -28,4 +28,8 @@ Pod::Spec.new do |s|
   s.subspec 'YYTimer' do |ss|
     ss.source_files = 'YYKit/Utility/YYTimer.{h,m}'
   end
+  
+  s.subspec 'YYDispatchQueuePool' do |ss|
+    ss.source_files = 'YYKit/Utility/YYDispatchQueuePool.{h,m}'
+  end
 end
